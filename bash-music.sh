@@ -223,7 +223,7 @@ Gb=$(mknote 740 square )
 G=$(mknote 784 square )
 Ab=$(mknote 830 square)
 
-echo -ne "$A$Bb$B$C$Db$D$Eb$E$F$Gb$G$Ab" | xxd --ps -r | aplay -f S16_BE --channels=$channels --rate=$sample_rate
+#echo -ne "$A$Bb$B$C$Db$D$Eb$E$F$Gb$G$Ab" | xxd --ps -r | aplay -f S16_BE --channels=$channels --rate=$sample_rate
 
 echo "Plaing sine waves..."
 A=$(mknote 440)
@@ -239,6 +239,6 @@ Gb=$(mknote 740)
 G=$(mknote 784)
 Ab=$(mknote 830)
 
-echo -ne "$A$Bb$B$C$Db$D$Eb$E$F$Gb$G$Ab" | xxd --ps -r | aplay -f S16_BE --channels=$channels --rate=$sample_rate
+# echo -ne "$A$Bb$B$C$Db$D$Eb$E$F$Gb$G$Ab" | xxd --ps -r | aplay -f S16_BE --channels=$channels --rate=$sample_rate
 
-echo -ne "$a$D$E$A$F$D$E$C$D$F$C$E $F$D$E$F$E$A$C$E$F$E$D$F $E$F$E$D$A$F$E$D$C$E$D$E $F$D$E$F$E$C$D$E$D$F$E$A" | xxd --ps -r | aplay -f S16_BE --channels=$channels --rate=$sample_rate
+# echo -ne "$a$D$E$A$F$D$E$C$D$F$C$E $F$D$E$F$E$A$C$E$F$E$D$F $E$F$E$D$A$F$E$D$C$E$D$E $F$D$E$F$E$C$D$E$D$F$E$A" | xxd --ps -r | aplay -f S16_BE --channels=$channels --rate=$sample_rate
